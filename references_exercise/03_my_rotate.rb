@@ -9,11 +9,21 @@
 # to the object_id of the returned array. The exact object_ids you get back don't matter. We just want the ids
 # to be the same before and after calling your method.
 
-
 def my_rotate!(array, amt)
+  if amt > 0
+    amt.times do 
+      ele = array.shift
+      array.push(ele)
+    end
+  else
+    amt.abs.times do 
+      ele = array.pop
+      array.unshift(ele)
+    end
+  end
 
+  array
 end
-
 
 array_1 = ["a", "b", "c", "d"]
 p array_1.object_id                 # => 70354216023780
