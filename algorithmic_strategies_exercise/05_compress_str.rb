@@ -13,7 +13,7 @@ def compress_str(str)
       i += 1
     end
     new_str += "#{count}#{char}" if count > 1
-    new_str += "#{char}" if count == 1
+    new_str += "#{char}" if count == 1 
   end
 
   new_str
