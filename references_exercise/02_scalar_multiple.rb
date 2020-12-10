@@ -7,9 +7,13 @@
 # to be the same before and after calling your method.
 
 def scalar_multiple!(array, multiplier)
-
+  i = 0
+  while i < array.length
+    array[i] *= multiplier
+    i += 1
+  end
+  array
 end
-
 
 array_1 = [7, 0, 4]
 p array_1.object_id                             # => 70326264380840
