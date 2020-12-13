@@ -16,3 +16,15 @@ def hipsterfy(word)
 end
 
 
+def vowel_counts(string)
+  vowel_hash = Hash.new(0)
+  vowels = 'aeiou'
+
+  string.each_char do |char|
+    vowel_hash[char] += 1 if vowels.include?(char)
+  end
+
+  vowel_hash
+end
+
+
