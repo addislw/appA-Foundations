@@ -39,3 +39,9 @@ def dupe_indices(array)
   hash.select { |k, v| v.length > 1 }
 end
 
+
+
+def ana_array(array_1, array_2)
+  target = array_1.permutation.to_a
+  target.include?(array_2)
+end
