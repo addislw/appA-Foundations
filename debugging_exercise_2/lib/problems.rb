@@ -17,3 +17,13 @@ def prime?(num)
   true
   
 end
+
+
+def unique_chars?(string)
+  hash = Hash.new(0)
+  string.each_char do |char|
+    hash[char] += 1
+  end
+
+  hash.values.all? { |k| k == 1 }
+end
