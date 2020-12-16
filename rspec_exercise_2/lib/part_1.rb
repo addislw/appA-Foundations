@@ -22,3 +22,9 @@ def substrings(string)
     
   subs
 end
+
+
+
+def palindrome_substrings(string)
+  substrings(string).select { |subs| palindrome?(subs) && subs.length > 1 }
+end
