@@ -28,3 +28,18 @@ def vowel_counts(string)
 end
 
 
+def caesar_cipher(msg, num)
+  alphabet = ('a'..'z').to_a
+  secret_msg = ''
+  msg.each_char do |char|
+    if alphabet.include?(char)
+      old_idx = alphabet.index(char)
+      new_char = alphabet[old_idx + num] % 26
+    else
+      new_char = char
+    end
+    secret_msg += new_char
+  end
+
+  secret_msg
+end
