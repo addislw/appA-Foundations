@@ -11,3 +11,10 @@ def reject_puppies(hash_array)
     hash['age'] <= 2
   end
 end
+
+
+def count_positive_subarrays(array)
+  array.count do |sub_array|
+    sub_array.sum > 0
+  end
+end
