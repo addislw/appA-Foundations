@@ -6,3 +6,8 @@ def select_even_nums(array)
 end
 
 
+def reject_puppies(hash_array)
+  hash_array.reject do |hash|
+    hash['age'] <= 2
+  end
+end
