@@ -32,3 +32,9 @@ def aba_translate(string)
   .join
 
 end
+
+
+
+def aba_array(string_array)
+  string_array.map { |string| aba_translate(string) }
+end
