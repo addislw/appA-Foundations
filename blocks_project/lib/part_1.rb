@@ -18,3 +18,17 @@ def count_positive_subarrays(array)
     sub_array.sum > 0
   end
 end
+
+
+def aba_translate(string)
+  vowels = 'aeiou'
+  string.split('').map do |char|
+    if vowels.include?(char)
+      char = "#{char}b#{char}"
+    else 
+      char
+    end    
+  end
+  .join
+
+end
