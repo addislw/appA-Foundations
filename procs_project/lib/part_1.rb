@@ -22,3 +22,11 @@ def my_select(array, &prc)
 end
 
 
+def my_count(array, &prc)
+  count = 0
+  array.each do |ele|
+    count += 1 if prc.call(ele)
+  end
+
+  count
+end
