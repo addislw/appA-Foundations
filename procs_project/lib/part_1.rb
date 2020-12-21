@@ -48,3 +48,13 @@ def my_all?(array, &prc)
 
   true
 end
+
+
+
+def my_none?(array, &prc)
+  array.each do |ele|
+    return false if prc.call(ele)
+  end
+
+  true
+end
