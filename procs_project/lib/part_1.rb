@@ -8,4 +8,17 @@ def my_map(array, &prc)
   new_array
 end
 
-p my_map([1,2,3]) { |n| 2 * n }
+
+
+def my_select(array, &prc)
+  new_array = []
+  array.each do |ele|
+    if prc.call(ele)
+      new_array << ele
+    end
+  end
+
+  new_array
+end
+
+
