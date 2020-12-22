@@ -22,6 +22,9 @@ class Dog
     end
   end
 
-  
+  def favorite_food?(food)
+    food_array = @favorite_foods.map(&:downcase)
+    food_array.include?(food.downcase)
+  end
 
 end
