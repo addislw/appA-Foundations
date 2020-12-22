@@ -14,4 +14,14 @@ class Dog
     @age = num
   end
 
+  def bark
+    if @age > 3
+      return @bark.upcase
+    else 
+      return @bark.downcase
+    end
+  end
+
+  
+
 end
