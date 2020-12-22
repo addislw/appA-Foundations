@@ -10,6 +10,8 @@ class Dog
     @favorite_foods = favorite_foods
   end
 
+  def age=(num)
+    @age = num
+  end
 
-  
 end
