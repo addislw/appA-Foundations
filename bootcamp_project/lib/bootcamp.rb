@@ -15,4 +15,13 @@ class Bootcamp
     @teachers.push(teacher)
   end
 
+  def enroll(student)
+    if @students.length < @student_capacity
+      @students.push(student)
+      return true
+    else
+      return false
+    end
+  end
+
 end
