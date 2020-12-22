@@ -11,4 +11,8 @@ class Bootcamp
     @grades = Hash.new { |h,k| h[k] = [] }
   end
 
+  def hire(teacher)
+    @teachers.push(teacher)
+  end
+
 end
