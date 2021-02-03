@@ -37,5 +37,9 @@ class Bootcamp
     @grades[student] << grade
     true
   end
+
+  def num_grades(student)
+    @grades[student].length
+  end
   
 end
