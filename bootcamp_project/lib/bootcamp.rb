@@ -31,5 +31,11 @@ class Bootcamp
   def student_to_teacher_ratio
     @students.length / @teachers.length
   end
+
+  def add_grade(student, grade)
+    return false if !self.enrolled?(student)
+    @grades[student] << grade
+    true
+  end
   
 end
